@@ -12,11 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Open Sans";
+  --heading-font: "Open Sans";
+  --nav-font: "Open Sans";
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -835,7 +833,8 @@ section,
   padding: 80px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url(../NewImg/HeroFondo.png) top center no-repeat;
+  background-color: #071337;
+  background: url(../NewImg/heroHomeFondo.png) top center no-repeat;
   background-size: cover;
 }
 
@@ -861,6 +860,10 @@ section,
 
 .hero img {
   width: 800px;
+}
+
+.hero .heroCourse-img{
+  width: 600px;
 }
 
 .hero .btn-get-started {
@@ -1045,6 +1048,7 @@ section,
   transform: translateX(5px);
 }
 
+
 /*--------------------------------------------------------------
 # Values Section
 --------------------------------------------------------------*/
@@ -1129,7 +1133,6 @@ section,
 }
 
 .features .feature-box i {
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
   color: var(--accent-color);
   line-height: 0;
   padding: 4px;
@@ -1142,6 +1145,51 @@ section,
 .features .feature-box:hover i {
   background: var(--accent-color);
   color: var(--contrast-color);
+}
+
+.features .containerBoton{
+  margin-top: 30px;
+
+}
+
+.features .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px
+    color-mix(in srgb, var(--accent-color), transparent 80%);
+  margin-top: 20px;
+}
+
+.features .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.features .btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  box-shadow: 0 8px 28px
+    color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+
+.features .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.features .priceCourse{
+  color: var(--accent-color);
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------
@@ -1329,41 +1377,93 @@ section,
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
+#pricing {
+  background-image: url(../NewImg/cursosHomeFondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.pricing .section{
+   background-image: url(../NewImg/cursosHomeFondo.png) top center no-repeat;
+   width: 100%;
+  padding: 80px 0 60px 0;
+  display: flex;
+  align-items: center;
+  background-color: #071337;
+  background-size: cover;
+
+}
 .pricing .pricing-tem {
   box-shadow: 0px 0 30px
-    color-mix(in srgb, var(--default-color), transparent 90%);
-  padding: 40px 20px;
+    color-mix(in srgb, var(--accent-color), transparent 90%);
+  padding: 0px 20px 40px;
   text-align: center;
   border-radius: 4px;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
   height: 100%;
+  background-color: var(--background-color)
+}
+
+.pricing .pricing-tem h3{
+  color: #d45b95;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.pricing .pricing-tem p{
+  color: #d45b95;
+  font-size: 15pt;
+  font-weight: normal;
 }
 
 .pricing .row {
   justify-content: center;
+
+}
+.pricing .title{
+  color: var(--contrast-color);
+}
+.pricing .bajada{
+  width: 600px;
+  margin-bottom: 40px;
+  color: var(--contrast-color);
+}
+
+.pricing img{
+  width: 300px;
+  opacity: 90%;
 }
 
 @media (min-width: 1200px) {
   .pricing .pricing-tem:hover {
     transform: scale(1.1);
     box-shadow: 0px 0 30px
-      color-mix(in srgb, var(--default-color), transparent 85%);
+      color-mix(in srgb, var(--contrast-color), transparent 85%);
+    background-color: var(--background-color);
   }
 }
+ 
+ .pricing .price p{
+   font-size: 10pt;
+ }
+ 
+ .pricing .price h3{
+   font-size: 18pt;
+   color: #d45b95;
+   font-weight: bold; 
+ }
 
-.pricing h3 {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
 
 .pricing .price {
   font-size: 36px;
   color: var(--heading-color);
   font-weight: 600;
   font-family: var(--heading-font);
+  color: #d45b95;
 }
 
 .pricing .price sup {
@@ -1379,7 +1479,8 @@ section,
 }
 
 .pricing .icon {
-  padding: 20px 0;
+  padding: 5px 10px;
+  width: 250px;
 }
 
 .pricing .icon i {
@@ -1394,6 +1495,7 @@ section,
   line-height: 26px;
   font-size: 16px;
   margin-bottom: 25px;
+  color:#071337
 }
 
 .pricing ul li {
@@ -1409,19 +1511,21 @@ section,
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
-  color: var(--accent-color);
+  color: var(--contrast-color);
   transition: none;
   font-size: 16px;
   font-weight: 400;
   font-family: var(--heading-font);
   font-weight: 600;
   transition: 0.3s;
-  border: 1px solid var(--accent-color);
+  
+  background: var(--accent-color);
 }
 
 .pricing .btn-buy:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--contrast-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .pricing .featured {
@@ -1431,11 +1535,12 @@ section,
   right: -68px;
   transform: rotate(45deg);
   z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
+  font-size: 9px;
+  padding: 3px 0 3px 0;
   background: var(--accent-color);
   color: var(--contrast-color);
 }
+
 
 /*--------------------------------------------------------------
 # Faq Section
@@ -1853,7 +1958,7 @@ section,
 .clients .containerColab {
   margin-top: 30px;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -2896,6 +3001,7 @@ section,
 .showroomCard{
   width: 100%;
 }
+
 
 .containerSumate{
   height: 400px;
