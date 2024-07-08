@@ -259,6 +259,11 @@ h6 {
   }
 }
 
+.header i{
+  color: var(--nav-dropdown-hover-color);
+  margin-left: 20px;
+}
+
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
