@@ -259,7 +259,7 @@ h6 {
   }
 }
 
-.header i{
+.header i {
   color: var(--nav-dropdown-hover-color);
   margin-left: 20px;
 }
@@ -466,6 +466,149 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# units
+--------------------------------------------------------------*/
+
+#units{
+  background-image: url(../NewImg/fondoCuadriculaNaranja.png);
+}
+/*--------------------------------------------------------------
+# Showroom
+--------------------------------------------------------------*/
+
+.showroom .showroom-newsletter {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--accent-color), transparent 85%);
+  padding: 50px 0;
+  background-image: url(../NewImg/fondoCuadriculaNaranja.png);
+}
+
+.showroom .showroom-newsletter .title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.showroom .showroom-newsletter h2 {
+  font-size: 30px;
+  clear: both;
+  display: inline-block;
+}
+
+.showroom .showroom-newsletter .newsletter-form {
+  margin-top: 30px;
+  padding: 6px 8px;
+  position: relative;
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px
+    color-mix(in srgb, var(--default-color), transparent 95%);
+  display: flex;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.showroom .showroom-newsletter .newsletter-form:focus-within {
+  border-color: var(--accent-color);
+}
+
+.showroom .showroom-newsletter .newsletter-form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: 100%;
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
+  color: var(--default-color);
+}
+
+.showroom
+  .showroom-newsletter
+  .newsletter-form
+  input[type="email"]:focus-visible {
+  outline: none;
+}
+
+.showroom .showroom-newsletter .newsletter-form input[type="submit"] {
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: -7px -8px -7px 0;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+.showroom .showroom-newsletter .newsletter-form input[type="submit"]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.showroom .showroom-newsletter .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.showroom .showroom-newsletter .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.showroom .showroom-newsletter .loading {
+  display: none;
+  background: var(--background-color);
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.showroom .showroom-newsletter .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--background-color);
+  animation: subscription-loading 1s linear infinite;
+}
+
+@keyframes subscription-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.showroom .fechas {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
@@ -482,6 +625,7 @@ h6 {
   border-bottom: 1px solid
     color-mix(in srgb, var(--accent-color), transparent 85%);
   padding: 50px 0;
+  background-image: url(../NewImg/fondoCuadriculaNaranja.png);
 }
 
 .footer .footer-newsletter h4 {
@@ -687,6 +831,16 @@ h6 {
   font-size: 13px;
 }
 
+/* @media (max-width: 690px) {
+  section,
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+} */
+
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -867,7 +1021,7 @@ section,
   width: 800px;
 }
 
-.hero .heroCourse-img{
+.hero .heroCourse-img {
   width: 600px;
 }
 
@@ -942,6 +1096,12 @@ section,
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+
+  .hero .hero-img img {
+    width: 120%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1053,7 +1213,6 @@ section,
   transform: translateX(5px);
 }
 
-
 /*--------------------------------------------------------------
 # Values Section
 --------------------------------------------------------------*/
@@ -1152,9 +1311,8 @@ section,
   color: var(--contrast-color);
 }
 
-.features .containerBoton{
+.features .containerBoton {
   margin-top: 30px;
-
 }
 
 .features .btn-get-started {
@@ -1192,7 +1350,7 @@ section,
   transform: translateX(5px);
 }
 
-.features .priceCourse{
+.features .priceCourse {
   color: var(--accent-color);
   font-weight: 700;
 }
@@ -1389,16 +1547,14 @@ section,
   background-repeat: no-repeat;
 }
 
-
-.pricing .section{
-   background-image: url(../NewImg/cursosHomeFondo.png) top center no-repeat;
-   width: 100%;
+.pricing .section {
+  background-image: url(../NewImg/cursosHomeFondo.png) top center no-repeat;
+  width: 100%;
   padding: 80px 0 60px 0;
   display: flex;
   align-items: center;
   background-color: #071337;
   background-size: cover;
-
 }
 .pricing .pricing-tem {
   box-shadow: 0px 0 30px
@@ -1410,16 +1566,16 @@ section,
   overflow: hidden;
   transition: 0.3s;
   height: 100%;
-  background-color: var(--background-color)
+  background-color: var(--background-color);
 }
 
-.pricing .pricing-tem h3{
+.pricing .pricing-tem h3 {
   color: #d45b95;
   font-size: 15pt;
   font-weight: bold;
 }
 
-.pricing .pricing-tem p{
+.pricing .pricing-tem p {
   color: #d45b95;
   font-size: 15pt;
   font-weight: normal;
@@ -1427,18 +1583,17 @@ section,
 
 .pricing .row {
   justify-content: center;
-
 }
-.pricing .title{
+.pricing .title {
   color: var(--contrast-color);
 }
-.pricing .bajada{
+.pricing .bajada {
   width: 600px;
   margin-bottom: 40px;
   color: var(--contrast-color);
 }
 
-.pricing img{
+.pricing img {
   width: 300px;
   opacity: 90%;
 }
@@ -1451,17 +1606,16 @@ section,
     background-color: var(--background-color);
   }
 }
- 
- .pricing .price p{
-   font-size: 10pt;
- }
- 
- .pricing .price h3{
-   font-size: 18pt;
-   color: #d45b95;
-   font-weight: bold; 
- }
 
+.pricing .price p {
+  font-size: 10pt;
+}
+
+.pricing .price h3 {
+  font-size: 18pt;
+  color: #d45b95;
+  font-weight: bold;
+}
 
 .pricing .price {
   font-size: 36px;
@@ -1484,7 +1638,7 @@ section,
 }
 
 .pricing .icon {
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   width: 250px;
 }
 
@@ -1500,7 +1654,7 @@ section,
   line-height: 26px;
   font-size: 16px;
   margin-bottom: 25px;
-  color:#071337
+  color: #071337;
 }
 
 .pricing ul li {
@@ -1523,7 +1677,7 @@ section,
   font-family: var(--heading-font);
   font-weight: 600;
   transition: 0.3s;
-  
+
   background: var(--accent-color);
 }
 
@@ -1546,6 +1700,9 @@ section,
   color: var(--contrast-color);
 }
 
+.pricing .cardDecoration {
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Faq Section
@@ -3003,20 +3160,19 @@ section,
   font-size: 14px;
 }
 
-.showroomCard{
+.showroomCard {
   width: 100%;
 }
 
-
-.containerSumate{
+.containerSumate {
   height: 400px;
-  background: url(../NewImg/fondoOnda.png)center no-repeat;
+  background: url(../NewImg/fondoOnda.png) center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   color: #f3f2ec;
 }
 
-.titleSumate{
+.titleSumate {
   color: #f3f2ec;
 }
