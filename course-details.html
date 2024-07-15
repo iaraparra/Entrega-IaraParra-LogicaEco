@@ -24,6 +24,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS Files -->
     <link
@@ -58,7 +62,7 @@
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <a href="home.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="assets/NewImg/Logo.png" alt="Logo" />
         </a>
@@ -66,9 +70,9 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="./index.html" class="active">Inicio<br /></a>
+              <a href="./home.html" class="">Inicio<br /></a>
             </li>
-            <li><a href="./index.html">Nosotros</a></li>
+            <li><a href="./home.html">Nosotros</a></li>
             <li class="dropdown">
               <a href="#"
                 ><span>Cursos</span>
@@ -80,10 +84,10 @@
                 <li><a href="./course-details.html">Re-Fashion</a></li>
               </ul>
             </li>
+            <li><a href="#portfolio">Muestrario</a></li>
             <li>
               <a href="#testimonials">Experiencias</a>
             </li>
-            <li><a href="#portfolio">Muestrario</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -91,7 +95,7 @@
 
         <i class="bi bi-person-fill"></i>
 
-        <!-- <a class="btn-getstarted flex-md-shrink-0" href="index.html#about"
+        <!-- <a class="btn-getstarted flex-md-shrink-0" href="home.html#about"
           >Get Started</a
         > -->
       </div>
@@ -99,7 +103,7 @@
 
     <main class="main">
       <!-- Hero Section -->
-      <section id="hero" class="hero section">
+      <section id="hero-detalle" class="hero-detalle section">
         <div class="container">
           <div class="row gy-4">
             <div
@@ -114,16 +118,19 @@
               <!-- class="img-fluid animated" -->
             </div>
             <div
-              class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center"
+              class="title-container col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center"
             >
               <h1 data-aos="fade-up">TALLER ECO-VOZ</h1>
-              <h3 data-aos="fade-up">TRANSFORMA LA MODA CON SOSTENIBILIDAD</h3>
-              <p data-aos="fade-up" data-aos-delay="100">
-                Diseñada para transformar tu visión y habilidades en el<br />diseño
-                de moda sostenible. A lo largo del curso descubrirás<br />
-                cómo crear moda que respete el medio ambiente y<br />
-                promueva la sostenibilidad.
+              <p class="bajada" data-aos="fade-up" data-aos-delay="100">
+                Diseñada para transformar tu visión y habilidades en el diseño
+                de moda sostenible.
               </p>
+
+              <p><i class="bi bi-asterisk"></i> UBICACIÓN: PALERMO</p>
+              <p><i class="bi bi-asterisk"></i> INICIO: 1 DE JULIO</p>
+              <p><i class="bi bi-asterisk"></i> MODALIDAD: PRESENCIAL</p>
+
+              <h2 class="priceCourse">$26.052ARS</h2>
 
               <div
                 class="d-flex flex-column flex-md-row"
@@ -142,65 +149,15 @@
       <!-- Features Section -->
       <section id="features" class="features section">
         <!-- Section Title -->
-        <div class="container" data-aos="fade-up">
-          <h2 class="title">DATOS QUE TENES QUE SABER<br /></h2>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>INFORMACIÓN</h2>
+          <h3>DATOS QUE TENES QUE SABER</h3>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-5">
-            <!-- Column 1 -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-star-fill"></i>
-                <h3>99% VALORACIONES POSITIVAS</h3>
-              </div>
-            </div>
-            <!-- End Feature Item -->
-
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-calendar-event"></i>
-                <h3>MARTES Y JUEVES<br />6PM-8PM</h3>
-              </div>
-            </div>
-            <!-- End Feature Item -->
-
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-person"></i>
-                <h3>MODALIDAD: PRESENCIAL</h3>
-              </div>
-            </div>
-            <!-- End Feature Item -->
-
-            <!-- Column 2 -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-book"></i>
-                <h3>UBICACIÓN: PALERMO</h3>
-              </div>
-            </div>
-            <!-- End Feature Item -->
-
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-book"></i>
-                <h3>2 CLASES SEMANALES</h3>
-              </div>
-            </div>
-            <!-- End Feature Item -->
-
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-calendar-event"></i>
-                <h3>INICIO: 1 DE JULIO</h3>
-              </div>
-            </div>
-            <!-- End Feature Item -->
-
-            <!-- Column 3 -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
               <div class="feature-box d-flex align-items-center">
                 <i class="bi bi-book"></i>
                 <h3>NIVEL: INICIAL</h3>
@@ -208,7 +165,7 @@
             </div>
             <!-- End Feature Item -->
 
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
               <div class="feature-box d-flex align-items-center">
                 <i class="bi bi-calendar-event"></i>
                 <h3>DURACIÓN: 12 SEMANAS</h3>
@@ -216,7 +173,7 @@
             </div>
             <!-- End Feature Item -->
 
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
               <div class="feature-box d-flex align-items-center">
                 <i class="bi bi-volume-up"></i>
                 <h3>IDIOMA: ESPAÑOL</h3>
@@ -226,117 +183,7 @@
           </div>
         </div>
 
-        <!-- <div class="container">
-          <div class="row gy-5">
-            <div class="col-xl-6 d-flex">
-              <div class="row align-self-center gy-4">
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-search-heart"></i>
-                    <h3>99% VALORACIONES POSITIVAS</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-megaphone"></i>
-                    <h3>MARTES Y JUEVES<br />6PM-8PM </h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-trash"></i>
-                    <h3>MODALIDAD: PRESENCIAL</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-book"></i>
-                    <h3>UBICACIÓN: PALERMO</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-people"></i>
-                    <h3>2 CLASES SEMANALES</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-arrow-repeat"></i>
-                    <h3>INICIO: 1 DE JULIO</h3>
-                  </div>
-                </div>
-               
-              </div>
-            </div>
-            <div class="col-xl-6 d-flex">
-              <div class="row align-self-center gy-4">
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-search-heart"></i>
-                    <h3>NIVEL: INICIAL</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-megaphone"></i>
-                    <h3>DURACIÓN: 12 SEMANAS</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-trash"></i>
-                    <h3>DISMINUIR LOS RESIDUOS TEXTILES</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-book"></i>
-                    <h3>EDUCAR EN SOSTENIBILIDAD</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-people"></i>
-                    <h3>EMPODERAR A LA COMUNIDAD</h3>
-                  </div>
-                </div>
-               
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                  <div class="feature-box d-flex align-items-center">
-                    <i class="bi bi-arrow-repeat"></i>
-                    <h3>CREAR UNA ECONOMÍA CIRCULAR</h3>
-                  </div>
-                </div>
-               
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="containerBoton">
-          <div class="text-center text-lg-center">
-            <h2 class="priceCourse">$18.065ARS</h2>
-          </div>
-
           <div class="text-center text-lg-center">
             <a
               href="#"
@@ -351,9 +198,9 @@
       <!-- Faq Section -->
       <section id="units" class="faq section">
         <!-- Section Title -->
-        <div class="container" data-aos="fade-up">
-          <h2 class="title">¿QUÉ VAS A APRENDER?</h2>
-          <h3>TEMARIO DEL TALLER</h3>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>TEMARIO DEL TALLER</h2>
+          <h3>¿QUÉ VAS A APRENDER?</h3>
         </div>
         <!-- End Section Title -->
 
@@ -361,7 +208,7 @@
           <div class="row">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="faq-container">
-                <div class="faq-item faq-active">
+                <div class="faq-item">
                   <h3>U1 | INTRODUCCIÓN A LA MODA SOSTENIBLE</h3>
                   <div class="faq-content">
                     <p>
@@ -470,15 +317,14 @@
       <!-- Team Section -->
       <section id="team" class="team section">
         <!-- Section Title -->
-        <div class="container" data-aos="fade-up">
-          <h2 class="title">LÍDERES EN MODA Y SOSTENIBILIDAD</h2>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>PROFESORES</h2>
           <h3>EXPERTOS EN LÓGICA ECOLÓGICA<br /></h3>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
-
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
@@ -499,11 +345,12 @@
                   </div>
                 </div>
                 <div class="member-info">
-                  <h4>JAVIER MORALES</h4>
-                  <span>Director de Producción Sostenible</span>
+                  <h4>MARTA GARCÍA</h4>
+                  <span>Pionera en Moda Sostenible</span>
                   <p>
-                    Lidera nuestros esfuerzos para implementar procesos de
-                    producción innovadores y sostenibles.
+                    Con más de 20 años de experiencia en la industria de la
+                    moda, ha dedicado su carrera a promover prácticas
+                    sostenibles.
                   </p>
                 </div>
               </div>
@@ -518,7 +365,7 @@
               <div class="team-member">
                 <div class="member-img">
                   <img
-                    src="assets/NewImg/team/equipo-07.png"
+                    src="assets/NewImg/team/equipo-17.png"
                     class="img-fluid imgTeam"
                     alt=""
                   />
@@ -530,11 +377,11 @@
                   </div>
                 </div>
                 <div class="member-info">
-                  <h4>MARÍA ROGUEZ</h4>
-                  <span>Fundadora y Directora Creativa</span>
+                  <h4>JUAN PÉREZ</h4>
+                  <span>Innovador en Diseño Verde</span>
                   <p>
-                    Con una visión pionera y un fuerte compromiso con la
-                    sostenibilidad.
+                    Un diseñador de moda que ha revolucionado el sector con sus
+                    innovadoras técnicas de diseño sostenible.
                   </p>
                 </div>
               </div>
@@ -549,7 +396,7 @@
               <div class="team-member">
                 <div class="member-img">
                   <img
-                    src="assets/NewImg/team/equipo-09.png"
+                    src="assets/NewImg/team/equipo-18.png"
                     class="img-fluid imgTeam"
                     alt=""
                   />
@@ -561,11 +408,11 @@
                   </div>
                 </div>
                 <div class="member-info">
-                  <h4>LAURA MORALES</h4>
-                  <span>Coordinadora de Educación y Comunidad</span>
+                  <h4>CARLOS FERNÁNDEZ</h4>
+                  <span>Defensor de la Fabricación Ética</span>
                   <p>
-                    Desarrollar programas educativos y talleres para promover
-                    prácticas de moda sostenible.
+                    Un defensor apasionado de la fabricación ética en la moda,
+                    se asegura que la producción textil sea justa y sostenible.
                   </p>
                 </div>
               </div>
@@ -580,7 +427,7 @@
               <div class="team-member">
                 <div class="member-img">
                   <img
-                    src="assets/NewImg/team/equipo-08.png"
+                    src="assets/NewImg/team/equipo-16.png"
                     class="img-fluid imgTeam"
                     alt=""
                   />
@@ -592,28 +439,27 @@
                   </div>
                 </div>
                 <div class="member-info">
-                  <h4>CARLOS FERRE</h4>
-                  <span>Responsable de Ventas y Marketing</span>
+                  <h4>LAURA SÁNCHEZ</h4>
+                  <span>Especialista en Economía Circular</span>
                   <p>
-                    Con una habilidad excepcional para comunicar nuestra misión
-                    y valores.
+                    Una experta en economía circular aplicada a la moda, creando
+                    sistemas que reduzcan el impacto ambiental.
                   </p>
                 </div>
               </div>
             </div>
             <!-- End Team Member -->
-
           </div>
         </div>
       </section>
       <!-- /Team Section -->
 
-       <!-- Pricing Section -->
-       <section id="pricing" class="pricing section">
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing section">
         <!-- Section Title -->
-        <div class="container" data-aos="fade-up">
-          <h2 class="title">OBTENE TU CERTIFICADO</h2>
-          <h3 class="title">BENEFICIOS<br /></h3>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>CERTIFICACIÑON</h2>
+          <h3 style="color: #f3f2ec">BENEFICIOS DE TU CERTIFICADO</h3>
         </div>
         <!-- End Section Title -->
 
@@ -632,8 +478,9 @@
                 />
                 <h3><br />VALIDACIÓN PROFESIONAL</h3>
                 <p>
-                  Prueba tangible de tu competencia en diseño de moda
-                  sostenible, valorada por la industria.
+                  Obtén una certificación reconocida que demuestra tu
+                  competencia en diseño de moda sostenible, altamente valorada
+                  por<br />la industria.
                 </p>
               </div>
             </div>
@@ -652,8 +499,9 @@
                 />
                 <h3><br />COMPROMISO CON LA SOSTENIBILIDAD</h3>
                 <p>
-                  Contribuye activamente a una industria de la moda más
-                  sostenible y responsable.
+                  Contribuye de manera activa a la transformación de la
+                  industria de la moda hacia prácticas más sostenibles y
+                  responsables.
                 </p>
               </div>
             </div>
@@ -672,8 +520,9 @@
                 />
                 <h3><br />ACCESO A UNA RED PROFESIONAL</h3>
                 <p>
-                  Participa en proyectos sostenibles y colabora con expertos del
-                  sector.
+                  Únete a una red de profesionales<br />y participa en proyectos
+                  innovadores, colaborando<br />con expertos del sector<br />en
+                  sostenibilidad.
                 </p>
               </div>
             </div>
@@ -681,18 +530,29 @@
           </div>
           <!-- End pricing row -->
         </div>
+
+        <div class="containerBoton">
+          <div class="text-center text-lg-center">
+            <a
+              href="#"
+              class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center"
+            >
+              <span>INSCRÍBETE</span>
+            </a>
+          </div>
+        </div>
       </section>
       <!-- /Pricing Section -->
 
       <!-- Portfolio Section -->
       <section id="portfolio" class="portfolio section">
         <!-- Section Title -->
-        <div class="container" data-aos="fade-up">
-          <h2 class="title">ORGULLOSOS DE SUS PRODUCCIONES</h2>
-          <h3 class="title">CREACIONES DE EVO-VOZ</h3>
-          <p>
-            A través de nuestros cursos de producción ecológica, han aprendido
-            <br />a crear moda sostenible y han transformado su forma de ver la
+        <div class="container section-title" data-aos="fade-up">
+          <h2>MUESTRARIO</h2>
+          <h3>CREACIONES DE EVO-VOZ</h3>
+          <p class="bajada">
+            A través de nuestros cursos de producción ecológica, han aprendido a
+            crear moda sostenible y han transformado su forma de ver la
             industria.
           </p>
         </div>
@@ -709,26 +569,12 @@
             >
               <div class="portfolio-content h-100">
                 <img
-                  src="assets/NewImg/muestrario/Frame 14.png"
+                  src="assets/NewImg/muestrario/Frame 23.png"
                   class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Greenthread</h4>
-                  <p>Lu y Sofi</p>
-                  <a
-                    href="assets/NewImg/muestrario/Frame 14.png"
-                    title="App 1"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
+                  <h4>Lu y Sofi</h4>
                 </div>
               </div>
             </div>
@@ -739,26 +585,12 @@
             >
               <div class="portfolio-content h-100">
                 <img
-                  src="assets/NewImg/muestrario/Frame 17.png"
+                  src="assets/NewImg/muestrario/Frame 20.png"
                   class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Eco-Voz</h4>
-                  <p>Ludmi</p>
-                  <a
-                    href="assets/NewImg/muestrario/Frame 17.png"
-                    title="Product 1"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
+                  <h4>Ludmi</h4>
                 </div>
               </div>
             </div>
@@ -774,21 +606,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Greenthread</h4>
-                  <p>Romi</p>
-                  <a
-                    href="assets/NewImg/muestrario/Frame 18.png"
-                    title="app 1"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
+                  <h4>Samu</h4>
                 </div>
               </div>
             </div>
@@ -804,21 +622,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Re-Fashion</h4>
-                  <p>Lore</p>
-                  <a
-                    href="assets/NewImg/muestrario/Frame 19.png"
-                    title="Branding 1"
-                    data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
+                  <h4>Lore</h4>
                 </div>
               </div>
             </div>
@@ -834,21 +638,7 @@
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Eco-Voz</h4>
-                  <p>Joha</p>
-                  <a
-                    href="assets/NewImg/muestrario/Frame 21.png"
-                    title="Product 2"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
+                  <h4>Romi</h4>
                 </div>
               </div>
             </div>
@@ -859,31 +649,16 @@
             >
               <div class="portfolio-content h-100">
                 <img
-                  src="assets/NewImg/muestrario/Frame 22.png"
+                  src="assets/NewImg/muestrario/Frame 10.png"
                   class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>Eco-Voz</h4>
-                  <p>Cris</p>
-                  <a
-                    href="assets/NewImg/muestrario/Frame 22.png"
-                    title="roduct 2"
-                    data-gallery="portfolio-gallery-roduct"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
+                  <h4>Cris</h4>
                 </div>
               </div>
             </div>
             <!-- End Portfolio Item -->
-
           </div>
           <!-- End Portfolio Container -->
         </div>
@@ -893,8 +668,9 @@
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section">
         <!-- Section Title -->
-        <div class="container" data-aos="fade-up">
-          <h3>HISTORIAS DE TRANSFORMACIÓN EN ECO-VOZ</h3>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>EXPERIENCIAS</h2>
+          <h3>HISTORIAS DE TRANSFORMACIÓN</h3>
         </div>
         <!-- End Section Title -->
 
@@ -929,11 +705,6 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <div class="profile mt-auto">
-                    <img
-                      src="assets/NewImg/Experiencias/exp1.png"
-                      class="testimonial-img"
-                      alt=""
-                    />
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -941,14 +712,12 @@
                       ><i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i>
                     </div>
-                    <h3>Ana Martínez</h3>
-                    <h4>Producción de indumentaria ecológica</h4>
+                    <h3>Mariana</h3>
                   </div>
                   <p>
-                    "Participar en el curso de Logica Eco fue una experiencia
-                    reveladora. Aprendí a trabajar con materiales reciclados y a
-                    diseñar prendas que no solo son hermosas, sino también
-                    respetuosas con el medio ambiente."
+                    "Aprendí tanto sobre cómo aplicar principios sostenibles en
+                    mi vida diaria. Los profesores son expertos apasionados y
+                    hacen que cada sesión sea interesante y educativa."
                   </p>
                 </div>
               </div>
@@ -956,11 +725,6 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <div class="profile mt-auto">
-                    <img
-                      src="assets/NewImg/Experiencias/exp1.png"
-                      class="testimonial-img"
-                      alt=""
-                    />
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -968,14 +732,13 @@
                       ><i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i>
                     </div>
-                    <h3>Ana Martínez</h3>
-                    <h4>Producción de indumentaria ecológica</h4>
+                    <h3>Jorge</h3>
                   </div>
                   <p>
-                    "Participar en el curso de Logica Eco fue una experiencia
-                    reveladora. Aprendí a trabajar con materiales reciclados y a
-                    diseñar prendas que no solo son hermosas, sino también
-                    respetuosas con el medio ambiente."
+                    "Tomar el curso de Eco Voz cambió mi perspectiva sobre la
+                    sostenibilidad. Las actividades prácticas y el enfoque
+                    interactivo realmente ayudaron a solidificar mi comprensión
+                    y me motivaron."
                   </p>
                 </div>
               </div>
@@ -983,11 +746,6 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <div class="profile mt-auto">
-                    <img
-                      src="assets/NewImg/Experiencias/exp1.png"
-                      class="testimonial-img"
-                      alt=""
-                    />
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -995,14 +753,13 @@
                       ><i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i>
                     </div>
-                    <h3>Ana Martínez</h3>
-                    <h4>Producción de indumentaria ecológica</h4>
+                    <h3>Claudia</h3>
                   </div>
                   <p>
-                    "Participar en el curso de Logica Eco fue una experiencia
-                    reveladora. Aprendí a trabajar con materiales reciclados y a
-                    diseñar prendas que no solo son hermosas, sino también
-                    respetuosas con el medio ambiente."
+                    "Recomiendo el curso de Eco Voz a cualquiera que quiera
+                    aprender más sobre sostenibilidad. La información es
+                    práctica y aplicable, y los profesores están siempre
+                    dispuestos a responder preguntas."
                   </p>
                 </div>
               </div>
@@ -1010,11 +767,6 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <div class="profile mt-auto">
-                    <img
-                      src="assets/NewImg/Experiencias/exp1.png"
-                      class="testimonial-img"
-                      alt=""
-                    />
                     <div class="stars">
                       <i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i
@@ -1022,14 +774,12 @@
                       ><i class="bi bi-star-fill"></i
                       ><i class="bi bi-star-fill"></i>
                     </div>
-                    <h3>Ana Martínez</h3>
-                    <h4>Producción de indumentaria ecológica</h4>
+                    <h3>Ricardo</h3>
                   </div>
                   <p>
-                    "Participar en el curso de Logica Eco fue una experiencia
-                    reveladora. Aprendí a trabajar con materiales reciclados y a
-                    diseñar prendas que no solo son hermosas, sino también
-                    respetuosas con el medio ambiente."
+                    "Este curso me equipó con las herramientas y el conocimiento
+                    para hacer una diferencia real. Me siento más empoderado
+                    para tomar decisiones sostenibles en el día a día."
                   </p>
                 </div>
               </div>
@@ -1044,9 +794,9 @@
       <!-- Faq Section -->
       <section id="faq" class="faq section">
         <!-- Section Title -->
-        <div class="container" data-aos="fade-up">
-          <h2 class="title">RESPUESTAS A TUS DUDAS</h2>
-          <h3>PREGUNTAS FRECUENTES DEL CURSO</h3>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>PREGUNTAS FRECUENTES DEL CURSO</h2>
+          <h3>RESPUESTAS A TUS DUDAS</h3>
         </div>
         <!-- End Section Title -->
 
@@ -1054,7 +804,7 @@
           <div class="row">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="faq-container">
-                <div class="faq-item faq-active">
+                <div class="faq-item">
                   <h3>¿Qué aprenderé en este curso?</h3>
                   <div class="faq-content">
                     <p>
@@ -1148,44 +898,6 @@
       </section>
       <!-- /Faq Section -->
 
-      <!-- Descanso Section  / NOSOTROS 
-      <section id="descanso" class="about section">
-        <div class="container containerSumate" data-aos="fade-up">
-          <div class="row gx-0">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="container" data-aos="fade-up">
-                <p>
-                  Únete al movimiento por una moda más sostenible y consciente.
-                  En Logica Eco, cada acción cuenta para construir un futuro más
-                  verde.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-6 d-flex align-items-center containerNosotros"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-              <h3 class="titleSumate">SÉ PARTE DEL CAMBIO</h3>
-              <div class="text-center text-lg-start">
-                <a
-                  href="#"
-                  class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center"
-                >
-                  <span>SUMATE</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-/Descanso Section -->
-
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1193,9 +905,13 @@
             <div class="col-lg-6">
               <div class="row gy-4">
                 <div class="col-md-12">
-                  <div class="" data-aos="fade" data-aos-delay="200">
-                    <h2 class="title">¿TIENES ALGUNA PREGUNTA?</h2>
-                    <h3>NO DUDES EN CONTACTARNOS</h3>
+                  <div
+                    class="section-title"
+                    data-aos="fade"
+                    data-aos-delay="200"
+                  >
+                    <h2>CONTACTO</h2>
+                    <h3>¿TIENES ALGUNA PREGUNTA?</h3>
                     <p>
                       Estamos aquí para ayudarte y escuchar tus sugerencias.<br />
                       Únete a nuestra comunidad y juntos construiremos un futuro
@@ -1299,7 +1015,7 @@
           <div class="row justify-content-center text-center">
             <div class="col-lg-6">
               <h4>ENTERATE DE TODAS LAS NOVEDADES</h4>
-              <p>Registrate a nuestro newsletter</p>
+              <p>REGISTRATE A NUESTRO NEWSLETTER</p>
               <form
                 action="forms/newsletter.php"
                 method="post"
@@ -1325,8 +1041,8 @@
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="d-flex align-items-center">
-              <img src="./assets/NewImg/Logo.png" />
+            <a href="home.html" class="d-flex align-items-center">
+              <img src="./assets/NewImg/LogoBlanco.png" />
             </a>
             <div class="footer-contact pt-3">
               <p>Buenos Aires, Argentina</p>
@@ -1338,59 +1054,65 @@
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Links</h4>
+            <h4 style="color: #f3f2ec">Links</h4>
             <ul>
               <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Inicio</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Nosotros</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Experiencias</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Muestrario</a>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./home.html">Inicio</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="#">Showroom</a>
+                <a href="./home.html">Nosotros</a>
               </li>
               <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Contacto</a>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./home.html">Muestrario</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./home.html">Experiencias</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./home.html">Showroom</a>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./home.html">Contacto</a>
               </li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Cursos</h4>
+            <h4 style="color: #f3f2ec">Cursos</h4>
             <ul>
               <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Greenthread</a>
+                <i class="bi bi-chevron-right"></i>
+                <a href="./course-details.html">Greenthread</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="#">Eco-Voz</a>
+                <a href="./course-details.html">Eco-Voz</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="#">Re-Fashion</a>
+                <a href="./course-details.html">Re-Fashion</a>
               </li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-12">
-            <h4>Nuestras redes</h4>
+            <h4 style="color: #f3f2ec">Nuestras redes</h4>
             <p>
               En Lógica-Eco estamos comprometidos con la innovación y la
               sostenibilidad en cada prenda que creamos.<br />Juntos, estamos
               redefiniendo la industria de la moda
             </p>
             <div class="social-links d-flex">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="./home.html"><i class="bi bi-twitter-x"></i></a>
+              <a href="./home.html"><i class="bi bi-facebook"></i></a>
+              <a href="./home.html"><i class="bi bi-instagram"></i></a>
+              <a href="./home.html"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
