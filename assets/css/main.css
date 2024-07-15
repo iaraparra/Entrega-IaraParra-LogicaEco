@@ -608,6 +608,16 @@ h6 {
   justify-content: space-between;
 }
 
+ @media (max-width: 690px) {
+  section,
+  .fechas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+} 
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
